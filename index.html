@@ -9,6 +9,31 @@
 <body>
     <button  onclick="displayDate()">Click me to view date</button>
     <p id="date"></p>
-    
+    <br>
+    <button onClick="sayGreetings();">Click me!</button>
+
+<p id="demo">Hi Customer!!<span id="greetings"></span></p>
+
+
+
+<script>
+const d = new Date()
+const h  = d.getHours()
+//document.getElementById("demo").innerHTML = h;
+
+function sayGreetings(){
+if(h<12){
+	document.getElementById("greetings").innerHTML="Good morning"
+}
+else{
+	document.getElementById("greetings").innerHTML="Good evening"
+
+}
+}
+
+
+</script>
+
+
 </body>
 </html>
