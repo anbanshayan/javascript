@@ -16,6 +16,7 @@
 
 <p id="hour"></p>
 <p id="minute"></p>
+<p id="second"></p>
 
 
 
@@ -23,8 +24,10 @@
 const d = new Date()
 const h  = d.getHours()
 const m = d.getMinutes()
+const s = d.getSeconds()
 document.getElementById("hour").innerHTML = h;
 document.getElementById("minute").innerHTML = m;
+document.getElementById("second").innerHTML = s;
 
 function sayGreetings(){
 if(h<12){
