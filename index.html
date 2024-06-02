@@ -12,14 +12,19 @@
     <br>
     <button onClick="sayGreetings();">Click me!</button>
 
-<p id="demo">Hi Customer!!<span id="greetings"></span></p>
+<p >Hi Customer!!<span id="greetings"></span></p>
+
+<p id="hour"></p>
+<p id="minute"></p>
 
 
 
 <script>
 const d = new Date()
 const h  = d.getHours()
-//document.getElementById("demo").innerHTML = h;
+const m = d.getMinutes()
+document.getElementById("hour").innerHTML = h;
+document.getElementById("minute").innerHTML = m;
 
 function sayGreetings(){
 if(h<12){
