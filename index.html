@@ -30,11 +30,15 @@ document.getElementById("minute").innerHTML = m;
 document.getElementById("second").innerHTML = s;
 
 function sayGreetings(){
-if(h<12){
+if(0<h<12){
 	document.getElementById("greetings").innerHTML="Good morning"
 }
-else{
-	document.getElementById("greetings").innerHTML="Good evening"
+else if(12<h<16){
+	document.getElementById("greetings").innerHTML="Good afternoon"
+
+}
+else(16<h){
+    document.getElementById("greetings").innerHTML="Good evening"
 
 }
 }
