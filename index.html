@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript</title>
     <script src="first.js"></script>
 </head>
 <body>
@@ -12,39 +12,15 @@
     <br>
     <button onClick="sayGreetings();">Click me!</button>
 
-<p >Hi Customer!!<span id="greetings"></span></p>
+<p >Hi da!!<span id="greetings"></span></p>
 
 <p id="hour"></p>
 <p id="minute"></p>
 <p id="second"></p>
 
+<button  onClick="document.getElementById('get').innerHTML='getElementById is method'">getElementById</button>
 
-
-<script>
-const d = new Date()
-const h  = d.getHours()
-const m = d.getMinutes()
-const s = d.getSeconds()
-document.getElementById("hour").innerHTML = h;
-document.getElementById("minute").innerHTML = m;
-document.getElementById("second").innerHTML = s;
-
-function sayGreetings(){
-if(0<h<12){
-	document.getElementById("greetings").innerHTML="Good morning"
-}
-else if(12<h<16){
-	document.getElementById("greetings").innerHTML="Good afternoon"
-
-}
-else{
-    document.getElementById("greetings").innerHTML="Good evening"
-
-}
-}
-
-
-</script>
+<p id="get">When you click, this changes</p>
 
 
 </body>
