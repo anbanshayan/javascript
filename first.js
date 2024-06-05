@@ -28,3 +28,6 @@ function sayGreetings(){
     }
 ////function sayGreetings ends here!!!
 
+function push(){
+    document.getElementById('para').innerHTML="Changed Successfully"
+}
