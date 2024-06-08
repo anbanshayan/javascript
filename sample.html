@@ -14,9 +14,12 @@
         b = 20;
         c = 30;
 
-        document.getElementById("add").innerHTML =  "The addition 10+20+30 = "+(a+b+c);
+        document.getElementById("add").innerHTML =  "The addition 10+20+30 = "+add(10,20,30);
 
-        
+        function add(x,y,z){
+            sum = x+y+z;
+            return sum;
+        }
 
     </script>
 </body>
