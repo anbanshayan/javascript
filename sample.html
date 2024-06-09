@@ -7,7 +7,9 @@
 </head>
 <body>
     <p id="add"></p>
+    <p id="none"></p>
     <p>My Name is <span id="name"></span></p>
+    <p>My Sister's name is  <span id="sname"></span></p>
 
     <script>
         var a,b,c;
@@ -16,13 +18,27 @@
         c = 30;
 
         let name = "Anbalagan Sujanasrishayan";
+        let firstName = "Sivananthi"
+        let lastName = "Anbalagan"
 
         document.getElementById("add").innerHTML =  "The addition 10+20+30 = "+add(10,20,30);
         document.getElementById("name").innerHTML = name;
+        document.getElementById("sname").innerHTML = firstName+" "+lastName;
+
+        document.write("The multiply 10*20 = "+multiply(10,20));
+
+
+        document.write("<br>"+"Alert!!")
+
+        //alert("Hello")
 
         function add(x,y,z){
             sum = x+y+z;
             return sum;
+        }
+        function multiply(a,b){
+            product = a * b;
+            return product;
         }
 
     </script>
