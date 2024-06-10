@@ -7,7 +7,7 @@
 </head>
 <body>
     <p id="add"></p>
-    <p id="none"></p>
+    <p id="kopay"></p>
     <p>My Name is <span id="name"></span></p>
     <p>My Sister's name is  <span id="sname"></span></p>
 
@@ -24,9 +24,9 @@
         document.getElementById("add").innerHTML =  "The addition 10+20+30 = "+add(10,20,30);
         document.getElementById("name").innerHTML = name;
         document.getElementById("sname").innerHTML = firstName+" "+lastName;
+        document.getElementById("kopay").innerHTML = firstName+" "+lastName;
 
-        document.write("The multiply 10*20 = "+multiply(10,20));
-
+        document.getElementById("kopay").innerHTML = "The product is "+multiply(20,3);
 
         document.write("<br>"+"Alert!!")
 
@@ -36,6 +36,7 @@
             sum = x+y+z;
             return sum;
         }
+
         function multiply(a,b){
             product = a * b;
             return product;
