@@ -7,6 +7,7 @@
 </head>
 <body>
     <p id="let"></p>
+    <p id="boolean"></p>
     <script>
 
         var x,y,z;
@@ -14,6 +15,15 @@
         y = 5;
         z = x**y;
         document.getElementById("let").innerHTML="two to the power five is equal to ="+z;
+
+        a = 5;
+        b = "5";
+        if(a===b){
+            document.getElementById("boolean").innerHTML="TRUE";
+        }
+        else{
+            document.getElementById("boolean").innerHTML="FALSE";
+        }
 
     </script>
 </body>
